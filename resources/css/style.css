@@ -32,14 +32,16 @@ body {
 /* BUTTONS */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
 	text-decoration: none;
 	padding: 15px 50px;
 	border-radius: 200px;
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
 	display: inline-block;
 	background-color: #ed07b7;
 	color: #fff;
@@ -47,7 +49,8 @@ body {
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit]:hover {
 	background-color: #bd0592;
 	transform: scale(1.1);
 }
@@ -414,5 +417,136 @@ cite > img {
 	background-color: #fcfcfc;
 }
 
-/* CONTACT-SECTION */
+/* CONTACT FORM SECTION */
 
+.contact-section {
+	text-align: center;
+}
+
+.contact-heading {
+	color: #000;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.contact-form {
+	text-align: left;
+	width: 60%;
+	margin: 0 auto;
+	color: #555;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	width: 100%;
+	padding: 8px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+input[type=checkbox] {
+	margin: 10px 5px 10px 0;
+}
+
+textarea {
+	resize: none;
+}
+
+*:focus {
+	outline: none;
+}
+
+input[type=submit] {
+	border: none;
+	margin-bottom: 30px;
+}
+
+/* FOOTER SECTION */
+footer {
+	background-color: #333;
+	padding: 50px 0;
+	font-size: 80%;
+	color: #888;
+}
+
+.footer-nav {
+	float: left;
+}
+
+.footer-nav li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+	text-decoration: none;
+	color: #aaa;
+	transition: all .5s ease-in-out;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+	text-decoration: none;
+	color: #fff;
+}
+
+.social-links {
+	float: right;
+}
+
+.social-links li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+	text-decoration: none;
+	color: #aaa;
+	font-size: 160%;
+	transition: all .5s ease-in-out;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram,
+.fa-linkedin,
+.fa-github {
+	transition: all .2s ease-in-out;
+}
+
+.fa-facebook-f:hover {
+	color: #3b5998;
+}
+
+.fa-twitter:hover {
+	color: #00aced;
+}
+
+.fa-instagram:hover {
+	color: #517fa4;
+}
+
+.fa-linkedin:hover {
+	color: #007bb6;
+}
+
+.fa-github:hover {
+	color: #171515;
+}
+
+footer p {
+	text-align: center;
+	margin-top: 40px;
+	line-height: 1.5;
+}
+
+footer p > a {
+	color: #bbb;
+	text-decoration: none;
+}
