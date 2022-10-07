@@ -25,6 +25,12 @@
 		font-size:12px;
 	}
 
+	.header-box {
+		transform: translate(-30%, -50%);
+		top: 50%;
+		left: 30%;
+	}
+
 	.row {
 		padding:0 2%;
 	}
@@ -67,6 +73,80 @@
 		font-size:10px;
 	}
 
+	header {
+		height: 50vh;
+	}
+
+	.header-box {
+		transform: none;
+		top: 25%;
+		left: 5%;
+		right: 5%;
+	}
+	.about-section {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.about-section .span_1_of_2 {
+		width: 100%;
+	}
+
+	.services-section .span_1_of_4 {
+		width: 50%;
+	}
+
+	.partners-section .span_1_of_4 {
+		width: 50%;
+	}
+
+	.testimonials-section > .row:last-child {
+		width: 90%;
+		margin:  0 auto;
+	}
+
+	.testimonials-section .span_1_of_3 {
+		width: 100%;
+	}
+
+	.packages-section > .row:last-child {
+		width: 90%;
+		margin:  0 auto;
+	}
+
+	.packages-section .span_1_of_3 {
+		width: 100%;
+	}
+
+	.contact-section form {
+		width: 80%;
+	}
+
+	.work-portfolio li {
+    	display: block;
+    	width: 50%;
+    	float: left;
+	}
+
+	.col {
+		margin-left: 0;
+	}
+
+	.laptop-image {
+		padding:0;
+		margin:0 auto;
+	}
+
+	.about-box:last-child {
+		text-align:left;
+		padding-left: 0;
+	}
+
+	.about-box:first-child {
+		text-align:left;
+		padding-left: 0;
+	}
+
 	.header-text-box {
 		margin-bottom:50px;
 	}
@@ -93,25 +173,56 @@
 	.testimonial-heading {
 		margin-bottom:10px;
 	}
+	.footer-nav li {
+		line-height: 25px;
+	}
 }
 
 /* smaller to larger mobile phones*/
 @media only screen and (max-width:480px) {
-	.laptop-image {
-		padding:0;
-		margin:0 auto;
+	header {
+		height: 60vh;
+	}
+
+	header nav .logo {
+		width: 70px;
+		height: 70px;
+		margin-top: 20px;
+		margin-left: 15px;
+	}
+
+	.header-box {
+		transform: none;
+		top: 18%;
+		left: 3%;
+		right: 3%;
+	}
+
+	.main-nav li {
+		margin-right: 20px;
+	}
+
+	.about-section {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.about-box .btn {
+		display: inline-block;
 	}
 
 	.about-box:last-child {
 		text-align:center;
+		padding-left: 0;
 	}
 
 	.about-box:first-child {
 		text-align:center;
+		padding-left: 0;
 	}
 
 	.span_1_of_4 {
-		width:45%;
+		width:90%;
 		margin-bottom:20px;
 	}
 
@@ -135,7 +246,21 @@
 		margin-bottom:10px;
 	}
 
+	.work-portfolio {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.work-portfolio li {
-		width:50%;
+		width:90%;
+		margin-bottom: 10px;
+	}
+
+	.testimonial-box:last-child {
+		margin-bottom: 30px;
+	}
+	.footer-nav li {
+		line-height: 20px;
 	}
 }
