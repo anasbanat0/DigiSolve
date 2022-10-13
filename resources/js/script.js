@@ -10,6 +10,7 @@ $(document).ready(function() {
 		}
 	}); 
 
+	
 	/* Scrolling to contact section */
 	$(".js--scroll-to-contact").click(function() {
 		$('html, body').animate({scrollTop:$('.js--contact').offset().top},1000);
